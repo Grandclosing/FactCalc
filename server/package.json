@@ -1,0 +1,11 @@
+{
+  "name": "factcalc",
+  "version": "1.0.0",
+  "description": "A simple Angularjs calculator that gives you cool trivia!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vuk Petrovic",
+  "license": "ISC"
+}

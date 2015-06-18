@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="myCalculator" onkeypress="keyInput(event)">
+  <head>
+	<meta charset="UTF-8" />
+	<title>FactCalc.org</title>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+  </head>
+  <body>
+	<div id="calculatorGroup" ng-controller="Calc">
+		<div id="calculator">
+			<div id="inputArea">
+				<input id="numberBar" type="text" ng-model="argumentNumber" placeholder="0"></input>
+			</div>
+			
+			<div id="buttonArea">
+				<div ng-click="addNumber(1)" class="calcButton">1</div>
+				<div ng-click="addNumber(2)" class="calcButton">2</div>
+				<div ng-click="addNumber(3)" class="calcButton">3</div>
+				<div ng-click="addNumber(4)" class="calcButton">4</div>
+				<div ng-click="addNumber(5)" class="calcButton">5</div>
+				<div ng-click="addNumber(6)" class="calcButton">6</div>
+				<div ng-click="addNumber(7)" class="calcButton">7</div>
+				<div ng-click="addNumber(8)" class="calcButton">8</div>
+				<div ng-click="addNumber(9)" class="calcButton">9</div>
+				<div ng-click="addNumber(0)" class="calcButton">0</div>
+				<div ng-click="add()" class="calcButton">+</div>
+				<div ng-click="sub()" class="calcButton">-</div>
+				<div ng-click="mult()" class="calcButton">x</div>
+				<div ng-click="div()" class="calcButton">/</div>
+				
+				<div ng-click="displayResult()" class="calcButton" id="equals">=</div>
+				<div ng-click="clearAll()" class="calcButton">C</div>
+				<div ng-click="clearLast()" class="calcButton">CE</div>
+				<div ng-click="sqrt()" class="calcButton">&radic;</div>
+				<div ng-click="sqr()" class="calcButton">x&sup2;</div>
+				<div ng-click="dec()" class="calcButton">.</div>
+			</div>
+		</div>
+		<div id="loader">
+			<img id="loadImg" alt="Loading..." src="../assets/ajax-loader.gif">
+		</div>
+		<div id="numberFact">
+			<h3 id="numFact">{{factResult}}</h3>
+		</div>
+		
+		
+		<!--Twitter Tag-->
+		<div id="twitter-container">
+		
+		</div>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</div>
+	
+  </body>
+</html>

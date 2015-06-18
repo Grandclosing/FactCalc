@@ -1,0 +1,128 @@
+
+html {
+	max-height: 720px;
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	max-height: 700px;
+	margin: 0px;
+	padding: 0px;
+	background-image: url('../assets/background.jpg');
+	background-repeat: no-repeat;
+}
+
+#calculator {
+	width: 605px;
+	height: 445px;
+	border-radius: 10px;
+	background-color: #272822;
+	margin: 0 auto;
+	margin-top: 4%;
+	-webkit-box-shadow: 5px 5px 39px 3px rgba(87,87,87,1);
+	-moz-box-shadow: 5px 5px 39px 3px rgba(87,87,87,1);
+	box-shadow: 5px 5px 39px 3px rgba(87,87,87,1);
+}
+
+#inputArea {
+	padding-top: 20px;
+	margin-left: 20px;
+	height: 35px;
+	width: 92.3%;
+}
+
+#numberBar {
+	height: 100%;
+	width: 100%;
+	font-size: 30px;
+	text-align: right;
+}
+
+#buttonArea {
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.calcButton {
+	width: 100px;
+	height: 50px;
+	padding-top: 15px;
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	background-color: #595959;
+	color: white;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+	/*-webkit-box-shadow: inset 5px 5px 39px 3px rgba(87,87,87,1);
+	-moz-box-shadow: inset 5px 5px 39px 3px rgba(87,87,87,1);
+	box-shadow: inset 5px 5px 39px 3px rgba(87,87,87,1);*/
+}
+
+.calcButton:hover {
+	background-color: #ACACAC;
+}
+
+.calcButton:active {
+	transition: background-color 0.1s ease, color 0.1 ease;
+	background-color: #C2EBFF;
+	color: black;
+}
+
+#numberFact {
+	display: none;
+	width: 605px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+#numFact {
+	font-size: 25px;
+	font-family: 'Muli', sans-serif;
+	color: white;
+}
+
+#equals {
+	background-color: #C2EBFF;
+	transition: background-color 0.3s ease;
+	color: black;
+}
+
+#equals:hover {
+	background-color: #9EBFCF;
+}
+
+#loader {
+	width: 54px;
+	height: 55px;
+	margin: 0 auto;
+	margin-top: 35px;
+	display: none;
+}
+
+#loadImg {
+	width: 54px;
+	height: 55px;
+}
+
+#twitter-container {
+	display: none;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+
+
+
