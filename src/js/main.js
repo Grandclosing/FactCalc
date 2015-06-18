@@ -233,7 +233,7 @@ function fadeOut(widget) {
 		}
 	}, 30);
 }
-
+//for a more cross-browser-compatible solution, check for e.keyCode -> IE; but I don't care for IE much... e.which will do. 
 function keyInput(e) {
 	var keyString = String.fromCharCode(e.which);
 	var keyCode = e.which;
